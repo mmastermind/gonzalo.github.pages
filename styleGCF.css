@@ -1,0 +1,12 @@
+h1 {margin-bottom: 15px;font-size: 60px; color: blue;text-align: center; text-decoration: underline;background-color: black;}
+
+/* h2 heading tag */
+h2 {margin-top: 15px; margin-bottom: 15px;font-size: 40px; color: green;text-align: left; text-decoration: ;background-color: white;}
+
+h2 {margin-top: 15px; margin-bottom: 15px;font-size: 40px; color: red;text-align: left; text-decoration: ;background-color: white;}
+img {box-sizing: 10px 10px 5 px black}
+
+section {background-color: gray}
+
+ul {border-style: solid; ;
+color: yellow;}
