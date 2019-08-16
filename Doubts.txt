@@ -1,0 +1,13 @@
+GENERAL
+Size of images main one  - CSS?
+In the case of images: how to split like in thumbnails? - CSS?
+
+How to set justified images format for landing page and images - CSS
+How to increase the size of the main container so that it "fits" the screen . the way it is
+S'ize of visualizations and centered - CSS?
+¿
+Nav bar: how to justify right some elements only - CSS?
+
+CSS padding & backgorund color - CSS?
+
+how to link everything together: links of github for every part?
