@@ -1,21 +1,33 @@
 
 /* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
-  background: #f1f1f1;
+  background: #cbcbcc;
 }
 
 h1 {
-  font-size: 160px;
+  font-size: 60px;
+  margin: 2%;
 }
 
 h3 {
   font-size: 30px;
+  margin: 2%;
 }
 
+.bg-light {
+  background: rgb(9, 175, 148);
+}
+.bg-light {
+  background-color: rgb(9, 175, 148)!important;
+}
 /* Giving our navbar some padding and a background color */
-navbar-toggler {
+.navbar-toggler {
   padding: 10px;
   background: #5191fd;
+}
+
+.just_cont {
+  justify-content: flex-end;
 }
 
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
@@ -25,10 +37,14 @@ navbar-toggler {
   margin-right: 10px;
   margin-left: 10px;
   cursor: pointer;
-  background: #fff;
+  background: white;
   border-radius: 3px;
 }
 
+.lead {
+  text-justify: center;
+  margin: 2%;
+}
 /* Getting rid of the default link styles here */
 .navbar li a {
   color: #010101;
@@ -39,7 +55,7 @@ navbar-toggler {
 .header {
   height: 200px;
   padding-top: 20px;
-  background: #cdcdcd;
+  background: rgb(9, 175, 148);
 }
 
 /* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
@@ -61,6 +77,79 @@ navbar-toggler {
   visibility: hidden;
 }
 
+/* div {
+  box-sizing: border-box;
+  width: 50%;
+  border: 5px solid blue;
+  float: left;
+} */
+
+.big_image {
+  object-fit: cover;
+  max-width: 120%;
+  /* margin: 3%; */
+  align-self: flex-end;
+}
+
+.thumbnail {
+  object-fit: fill;
+  /* width: 75px;
+  height: 50px; */
+  max-width: 100%;
+  margin: 2%;
+}
+
+.container {
+  box-sizing: border-box;
+  background: ##f8f9fa;
+  background-color: rgb(241, 241, 241);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+  color: rgb(0, 0, 0);
+  display: block;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 22.5px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 3%;
+  text-size-adjust: 100%;
+  align-self: center;
+}
+
+.image-container {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+/* includes alternating gray and white with on-hover color */
+
+.mystyle {
+  font-size: 11pt; 
+  font-family: Arial;
+  border-collapse: collapse; 
+  border: 1px solid silver;
+
+}
+
+.mystyle td, th {
+  padding: 5px;
+}
+
+.mystyle tr:nth-child(even) {
+  background: #E0E0E0;
+}
+
+.mystyle tr:hover {
+  background: silver;
+  cursor: pointer;
+}
+/* img {
+  max-width: 100%; */
+}
+
 /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
 @media (max-width: 480px) {
   .navbar li {
@@ -80,41 +169,6 @@ navbar-toggler {
     visibility: visible;
     background: #0a62c7;
     background-color:#0a62c7;
-  }
-  div .big_image {
-    object-fit: cover;
-  }
-  *.thumbnail {
-    object-fit: contain;
-    width: 75px;
-    height: 50px;
-
-  }
-  .container {
-    box-sizing: border-box;
-    background: #d1d1d1;
-    background-color: rgb(241, 241, 241);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
-    color: rgb(0, 0, 0);
-    display: block;
-    font-family: Verdana, sans-serif;
-    font-size: 15px;
-    height: 210.1px;
-    line-height: 22.5px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 20px;
-    padding-bottom: 0.15px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 0.15px;
-    text-size-adjust: 100%;
-  }
-  div {
-    box-sizing: border-box;
-    width: 50%;
-    border: 5px solid blue;
-    float: left;
+    justify-content: flex-end
   }
 }

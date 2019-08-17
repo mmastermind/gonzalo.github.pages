@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="reset.css">
   <title>Comparisson</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -10,68 +11,67 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="https://github.com/mmastermind/gonzalo.github.pages/blob/master/landing_page.html">Latitude</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <div class="row justify-content-end">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://github.com/mmastermind/gonzalo.github.pages/blob/master/Lat%20vs%20temp.html">Max Temperature</a>
-              <a class="dropdown-item" href="https://github.com/mmastermind/gonzalo.github.pages/blob/master/Lat_vs_humidity.html">Humidity</a>
-              <a class="dropdown-item" href="https://github.com/mmastermind/gonzalo.github.pages/blob/master/lat-Cloudiness.jpg">Cloudiness</a>
-              <a class="dropdown-item" href="https://github.com/mmastermind/gonzalo.github.pages/blob/master/lat-Wind%20Speed.jpg">Wind Speed</a>              
-              <div class="dropdown-divider"></div>
-            </div>  
-          </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="https://github.com/mmastermind/gonzalo.github.pages/blob/master/comparisson_page.html">Comparisson <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/mmastermind/gonzalo.github.pages/blob/master/Data.html">Data</a>
-        </li>
-
-      </ul>
-    </div>
+    <a class="navbar-brand" href="./landing_page.html"><b>Latitude</b>                                              </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="row">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./Lat%20vs%20temp.html">Max Temperature</a>
+                    <a class="dropdown-item" href="./Lat_vs_humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="./Lat_vs_cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="./Lat_vs_wind.html">Wind Speed</a>              
+                    <div class="dropdown-divider">
+                   </div>
+                </div>  
+              </li>
+              <li class="nav-item active">
+                   <a class="nav-link" href="./comparisson_page.html">Comparisson <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="./Data.html">Data</a>
+              </li>
+          </ul>
+        </div>
+      </div>
   </nav>
 
   <div class="container">
    <div class="row">
     <div class="col-12">
-      <h1 class="display-4">Comparisson: Latitude vs X</h1>
+      <h1 class="display-4">Comparisson: Latitude vs "X"</h1>
       <hr class="my-4">
-      <p class="post">Click any plot to get an in-depth analysis</p>
+      <p class="lead">Click any plot to get an in-depth analysis</p>
     </div>
     <div class ="row">
-            <div class="col-6 col-sm-12">        
+            <div class="col-12 col-sm-12">        
                 <div class="image">
-                        <img src="lat-Temp [C].jpg" class="img-fluid" alt="Responsive image" href="https://github.com/mmastermind/gonzalo.github.pages/blob/master/Lat%20vs%20temp.html">
+                    <a href="./Lat%20vs%20temp.html"> <img src="lat-Temp [C].jpg" alt="vs Temp" aria-disabled="true"></a>
                 </div>
                 <div class="image">
-                        <img src="lat-Cloudiness.jpg" class="img-fluid" alt="Responsive image" href="https://github.com/mmastermind/gonzalo.github.pages/blob/master/lat-Cloudiness.jpg">
+                    <a href="./Lat_vs_cloudiness.html"> <img src="lat-Cloudiness.jpg" alt="vs Cloudiness" aria-disabled="true"></a>
                 </div>
             </div>
     </div>
     <div class ="row">
-            <div class="col-6 col-sm-12">        
+            <div class="col-12 col-sm-12">        
                 <div class="image">
-                    <img src="lat-Humidity.jpg" class="img-fluid" alt="Responsive image" href="https://github.com/mmastermind/gonzalo.github.pages/blob/master/Lat_vs_humidity.html">
+                    <a href="./Lat_vs_humidity.html"> <img src="lat-Humidity.jpg" alt="vs Humidity" aria-disabled="true"></a>
                 </div>
                 <div class="image">
-                        <img src="lat-Wind Speed.jpg" class="img-fluid" alt="Responsive image" href="https://github.com/mmastermind/gonzalo.github.pages/blob/master/lat-Wind%20Speed.jpg">
-                </div>
+                    <a href="./Lat_vs_wind.html"> <img src="lat-Wind Speed.jpg" alt="vs Wind" aria-disabled="true"></a>
+                  </div>
             </div>
-    </div>
+     </div>
    </div>
   </div>
 
